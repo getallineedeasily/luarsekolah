@@ -19,5 +19,10 @@ class DatabaseSeeder extends Seeder
             ProgramSeeder::class,
             TestimonialSeeder::class
         ]);
+        
+        $this->call([
+            CompanyPartnerSeeder::class,
+            FAQSeeder::class,
+        ]);
     }
 }

@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class CompanyPartner extends Model
+{
+    use HasFactory;
+
+    protected $table = 'company_partners';
+
+    protected $fillable = [
+        'name',
+        'address',
+        'email',
+        'phone',
+        'website',
+        'description',
+    ];
+}
