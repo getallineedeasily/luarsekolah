@@ -11,7 +11,17 @@
 <body>
     <header></header>
     <main>
-        <p>Luarsekolah</p>
+
+        {{-- Hero --}}
+        <section>
+            <h1></h1>
+            <h2></h2>
+            <button></button>
+            <span></span>
+            <div>
+                {{-- carousel of program available --}}
+            </div>
+        </section>
     </main>
     <footer></footer>
 </body>
