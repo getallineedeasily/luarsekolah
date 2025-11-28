@@ -19,7 +19,9 @@ class Program extends Model
         'name',
         'deadline',
         'descriptions',
-        'image'
+        'image',
+        'mentor',
+        'mentor_job',
     ];
 
     /**

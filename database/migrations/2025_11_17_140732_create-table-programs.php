@@ -16,6 +16,8 @@ return new class extends Migration {
             $table->date('deadline')->nullable();
             $table->json('descriptions')->nullable();
             $table->text('image')->nullable();
+            $table->string('mentor')->nullable();
+            $table->string('mentor_job')->nullable();
             $table->timestamps();
         });
     }
