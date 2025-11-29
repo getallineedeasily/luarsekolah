@@ -195,7 +195,8 @@
                                     <span class="bg-white">icon</span>
                                     <p class="text-white">Career Growth & Networking</p>
                                 </div>
-                                <p class="text-sm text-white">Bangun network professional dengan praktisi industri  & siap masuk kerja</p>
+                                <p class="text-sm text-white">Bangun network professional dengan praktisi industri &
+                                    siap masuk kerja</p>
                             </div>
                             <a class="block text-center text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
                                 href="#">Lihat Profil Mentor</a>
@@ -209,7 +210,8 @@
                                     <span class="bg-white">icon</span>
                                     <p class="text-white">Bisa Konversi SKS & Auto Lolos!</p>
                                 </div>
-                                <p class="text-sm text-white">Kesempatan magang di dunia kerja, auto lolos, dan bisa konversi sks sesuai ketentuan kampus masing-masing.</p>
+                                <p class="text-sm text-white">Kesempatan magang di dunia kerja, auto lolos, dan bisa
+                                    konversi sks sesuai ketentuan kampus masing-masing.</p>
                             </div>
                             <a class="block text-center text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
                                 href="#">Hubungi Admin</a>
@@ -247,7 +249,60 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+
+    {{-- Footer --}}
+    <footer class="bg-[#FFFCEF] py-20">
+        <div class="max-w-10/12 mx-auto">
+            {{-- Top Footer --}}
+            <div class="pb-28 grid grid-cols-5 gap-10">
+                <div class="space-y-10">
+                    <div>
+                        <img src="{{ asset('images/Logo_BB_Putih.png') }}" alt="Logo_BB_Putih">
+                    </div>
+                    <p class="font-medium text-[15px]">Headquarter Centennial Tower Level 29, Jl Jend Gatot Subroto
+                        No.27,
+                        Karet Semanggi, Setiabudi Daerah Khusus Ibukota Jakarta 12950</p>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-[15px] font-medium">Produk</p>
+                    <a class="text-[15px] font-medium underline" href="#">Luarsekolah</a>
+                    <a class="text-[15px] font-medium underline" href="#">Project Based Internship (PBI)</a>
+                    <a class="text-[15px] font-medium underline" href="#">Belajar Bekerja Bootcamp</a>
+                    <a class="text-[15px] font-medium underline" href="#">Aplikasi <span
+                            class="text-[#0071FF]">segera</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-[15px] font-medium">Perusahaan</p>
+                    <a class="text-[15px] font-medium underline" href="#">Tentang Kami</a>
+                    <a class="text-[15px] font-medium underline" href="#">FAQ</a>
+                    <a class="text-[15px] font-medium underline" href="#">Gabung Komunitas</a>
+                    <a class="text-[15px] font-medium underline" href="#">Blog</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-[15px] font-medium">Media Sosial</p>
+                    <a class="text-[15px] font-medium underline" href="#">Instagram</a>
+                    <a class="text-[15px] font-medium underline" href="#">Youtube</a>
+                    <a class="text-[15px] font-medium underline" href="#">TikTok</a>
+                    <a class="text-[15px] font-medium underline" href="#">LinkedIn</span></a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <p class="text-[15px] font-medium">Metode Pembayaran</p>
+                    <a class="text-[15px] font-medium underline" href="#">Partner</a>
+                    <a class="text-[15px] font-medium underline" href="#">Kartu Kredit</a>
+                    <a class="text-[15px] font-medium underline" href="#">Bank Transfer</a>
+                </div>
+            </div>
+
+            {{-- Bottom Footer --}}
+            <div class="border-t pt-20">
+                <p class="font-medium text-[15px]">Belajar Bekerja merupakan program untuk mempersiapkan individu menjadi lebih siap secara
+                    profesional. Dimana peserta dapat mengerjakan kasus nyata yang terjadi di dunia industri dengan
+                    memanfaatkan pemahaman digital transformasi serta teknologi Kecerdasan Buatan (AI) yang langsung
+                    didampingi oleh praktisi berpengalaman. Pada program ini semua orang memiliki kesempatan untuk
+                    berpengalaman di industri!</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
