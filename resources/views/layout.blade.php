@@ -159,7 +159,7 @@
                     SKS</h5>
 
                 <div class="mt-10 flex gap-6 items-center">
-                    <div style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 80%, rgba(0, 0, 0, 1) 100%), url('{{ asset('images/benefit-1.jpg') }}');"
+                    <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-1.jpg') }}');"
                         class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
                         <div class="flex flex-col h-full justify-between w-3/4">
                             <div>
@@ -180,7 +180,7 @@
                                 href="#">Lihat Portofolio</a>
                         </div>
                     </div>
-                    <div style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 80%, rgba(0, 0, 0, 1) 100%), url('{{ asset('images/benefit-2.png') }}');"
+                    <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-2.png') }}');"
                         class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
                         <div class="flex flex-col h-full justify-between w-3/4">
                             <div>
@@ -232,7 +232,7 @@
                 </div>
 
                 <div class="mt-10 flex flex-row-reverse gap-6 items-center">
-                    <div style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 80%, rgba(0, 0, 0, 1) 100%), url('{{ asset('images/benefit-4.jpg') }}');"
+                    <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-4.jpg') }}');"
                         class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
                         <div class="flex flex-col h-full justify-between w-3/4">
                             <div>
@@ -254,7 +254,7 @@
                                 href="#">Lihat Profil Mentor</a>
                         </div>
                     </div>
-                    <div style="background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.71) 80%, rgba(0, 0, 0, 1) 100%), url('{{ asset('images/benefit-3.jpg') }}');"
+                    <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-3.jpg') }}');"
                         class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
                         <div class="flex flex-col h-full justify-between w-3/4">
                             <div>
@@ -359,7 +359,8 @@
                                 class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
                                 <span
                                     class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
-                                <span class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
+                                <span
+                                    class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
                             </div>
                             <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
                                 <div class="space-y-4">
