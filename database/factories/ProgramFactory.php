@@ -20,8 +20,7 @@ class ProgramFactory extends Factory
             'name' => fake()->name(),
             'deadline' => fake()->date('d-m-Y'),
             'descriptions' => [],
-            'image' => 'image.jpg'
-
+            'image' => 'image.jpg',
         ];
     }
 }
