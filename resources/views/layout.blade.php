@@ -307,6 +307,82 @@
                 </div>
             </div>
         </section>
+
+        {{-- Video Testimonials --}}
+        <section style="background-image: linear-gradient(180deg, #927500 9.94%, #DCB000 66.39%, #FFFFFF 100%);"
+            class="mx-4 rounded-t-[20px] py-10">
+            <div class="max-w-10/12 mx-auto">
+                <div class="w-10/12 space-y-5 mb-10">
+                    <h3 class="font-medium text-[42px] text-white leading-tight">Intip Keseruan Project-Based
+                        Internship
+                        Luarsekolah</h3>
+                    <h4 class="font-medium text-2xl text-white">Dokumentasi Alumni - Luarsekolah</h4>
+                    <a href="#"
+                        class="rounded-[38px] bg-white flex justify-center items-center gap-1 w-[169px] p-2.5">
+                        <span class="text-sm">Mulai nonton</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+                            fill="none">
+                            <path d="M7 4.49756V16.7476L16.625 10.6226L7 4.49756Z" fill="black" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="flex gap-4 overflow-x-scroll items-stretch">
+                    @foreach ($videoTestimonials as $video)
+                        <a href=""
+                            style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.87%, rgba(0, 0, 0, 0.538119) 59.59%, rgba(0, 0, 0, 0.7) 100%), url('{{ $video->image }}');"
+                            class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center">
+                            <div class="rounded-full border border-white w-9 h-9 flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                    viewBox="0 0 21 21" fill="none">
+                                    <path d="M7 4.49756V16.7476L16.625 10.6226L7 4.49756Z" fill="white" />
+                                </svg>
+                            </div>
+
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+        </section>
+
+        {{-- Story Testimonial --}}
+        <section class="mx-4 pt-4 pb-10">
+            <div class="max-w-10/12 mx-auto pb-6">
+                <h4 class="font-medium text-2xl pb-8">Testimoni Nyata dari Alumni yang Berhasil Berkembang di Dunia
+                    Tech
+                </h4>
+                <div class="flex gap-5 flex-nowrap overflow-x-scroll">
+                    @foreach ($storyTestimonials as $story)
+                        <a href=""
+                            class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col">
+                            <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
+                                class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
+                                <span
+                                    class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
+                                <span class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
+                            </div>
+                            <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
+                                <div class="space-y-4">
+                                    <p class="font-medium text-xs text-white">Benefit utama</p>
+                                    <p class="font-medium text-xs text-white">Hasil belajar</p>
+                                    <p class="font-medium text-xs text-white">Kalimat singkat testimoni</p>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <img class="w-[33px] h-[33px] rounded-[10px]"
+                                        src="{{ $story->university_image }}" alt="{{ $story->university }}">
+                                    <span
+                                        class="font-medium text-xs text-white line-clamp-2">{{ $story->university }}</span>
+                                </div>
+                            </div>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+
+            <div style="background-image: linear-gradient(0deg, #DCB000 14.9%, #FFFFFF 100%);"
+                class="w-full h-[69px] rounded-b-[20px]">
+            </div>
+        </section>
     </main>
 
     {{-- Footer --}}
