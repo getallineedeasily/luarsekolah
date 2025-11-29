@@ -21,7 +21,7 @@
     <main>
         {{-- Hero --}}
         <section class="bg-[#0F0F0F] text-white h-dvh pt-30">
-            <div class="max-w-3/4 mx-auto">
+            <div class="max-w-10/12 mx-auto">
                 <div class="w-[547px]">
                     <h1 class="text-[42px] font-medium">Belajar Langsung dari Praktisi Berbagai Industri - bukan
                         Sekedar Teori!
@@ -60,7 +60,7 @@
 
         {{-- List PBI --}}
         <section class="pt-30">
-            <div class="max-w-3/4 mx-auto">
+            <div class="max-w-10/12 mx-auto">
                 <h3 class="font-medium text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
                 <h5 class="text-[#5D5D5D] text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan
                     kebutuhanmu
