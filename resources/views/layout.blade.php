@@ -316,7 +316,7 @@
                     <h3 class="font-medium text-[42px] text-white leading-tight">Intip Keseruan Project-Based
                         Internship
                         Luarsekolah</h3>
-                    <h4 class="font-medium text-2xl text-white">Dokumentasi Alumni - Luarsekolah</h4>
+                    <h4 class="font-medium text-2xl text-[#E7E7E7]">Dokumentasi Alumni - Luarsekolah</h4>
                     <a href="#"
                         class="rounded-[38px] bg-white flex justify-center items-center gap-1 w-[169px] p-2.5">
                         <span class="text-sm">Mulai nonton</span>
@@ -327,20 +327,50 @@
                     </a>
                 </div>
 
-                <div class="flex gap-4 overflow-x-scroll items-stretch">
-                    @foreach ($videoTestimonials as $video)
-                        <a href=""
-                            style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.87%, rgba(0, 0, 0, 0.538119) 59.59%, rgba(0, 0, 0, 0.7) 100%), url('{{ $video->image }}');"
-                            class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center">
-                            <div class="rounded-full border border-white w-9 h-9 flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                    viewBox="0 0 21 21" fill="none">
-                                    <path d="M7 4.49756V16.7476L16.625 10.6226L7 4.49756Z" fill="white" />
-                                </svg>
-                            </div>
+                <div class="relative" data-carousel>
 
-                        </a>
-                    @endforeach
+                    {{-- previous button --}}
+                    <button id="videoTestimonialCarouselPrevBtn"
+                        style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+                        class="carousel-prev cursor-pointer absolute left-0  -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
+                        <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="25"
+                            viewBox="0 0 15 25" fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    {{-- next button --}}
+                    <button id="videoTestimonialCarouselNextBtn"
+                        style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+                        class="carousel-next cursor-pointer absolute right-0  -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
+                            fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <div id="videoTestimonialCarouselContainer"
+                        class="carousel-track flex gap-4 overflow-x-auto items-stretch scrollbar-hide">
+                        @foreach ($videoTestimonials as $video)
+                            <a href=""
+                                style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.87%, rgba(0, 0, 0, 0.538119) 59.59%, rgba(0, 0, 0, 0.7) 100%), url('{{ $video->image }}');"
+                                class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center">
+                                <div class="rounded-full border border-white w-9 h-9 flex items-center justify-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                        viewBox="0 0 21 21" fill="none">
+                                        <path d="M7 4.49756V16.7476L16.625 10.6226L7 4.49756Z" fill="white" />
+                                    </svg>
+                                </div>
+
+                            </a>
+                        @endforeach
+                    </div>
+
+                    <div class="carousel-pagination flex justify-center gap-2 mt-4"></div>
                 </div>
             </div>
         </section>
@@ -351,32 +381,60 @@
                 <h4 class="font-medium text-2xl pb-8">Testimoni Nyata dari Alumni yang Berhasil Berkembang di Dunia
                     Tech
                 </h4>
-                <div class="flex gap-5 flex-nowrap overflow-x-scroll">
-                    @foreach ($storyTestimonials as $story)
-                        <a href=""
-                            class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col">
-                            <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
-                                class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
-                                <span
-                                    class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
-                                <span
-                                    class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
-                            </div>
-                            <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
-                                <div class="space-y-4">
-                                    <p class="font-medium text-xs text-white">Benefit utama</p>
-                                    <p class="font-medium text-xs text-white">Hasil belajar</p>
-                                    <p class="font-medium text-xs text-white">Kalimat singkat testimoni</p>
-                                </div>
-                                <div class="flex items-center gap-4">
-                                    <img class="w-[33px] h-[33px] rounded-[10px]"
-                                        src="{{ $story->university_image }}" alt="{{ $story->university }}">
+
+                <div class="relative" data-carousel>
+
+                    {{-- previous button --}}
+                    <button id="videoTestimonialCarouselPrevBtn"
+                        style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+                        class="carousel-prev cursor-pointer absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
+                        <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="25"
+                            viewBox="0 0 15 25" fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    {{-- next button --}}
+                    <button id="videoTestimonialCarouselNextBtn"
+                        style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+                        class="carousel-next cursor-pointer absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
+                            fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="white" />
+                        </svg>
+                    </button>
+
+                    <div class="carousel-track flex gap-5 flex-nowrap overflow-x-auto scrollbar-hide">
+                        @foreach ($storyTestimonials as $story)
+                            <a href=""
+                                class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col">
+                                <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
+                                    class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
                                     <span
-                                        class="font-medium text-xs text-white line-clamp-2">{{ $story->university }}</span>
+                                        class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
+                                    <span
+                                        class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
                                 </div>
-                            </div>
-                        </a>
-                    @endforeach
+                                <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
+                                    <div class="space-y-4">
+                                        <p class="font-medium text-xs text-white">Benefit utama</p>
+                                        <p class="font-medium text-xs text-white">Hasil belajar</p>
+                                        <p class="font-medium text-xs text-white">Kalimat singkat testimoni</p>
+                                    </div>
+                                    <div class="flex items-center gap-4">
+                                        <img class="w-[33px] h-[33px] rounded-[10px]"
+                                            src="{{ $story->university_image }}" alt="{{ $story->university }}">
+                                        <span
+                                            class="font-medium text-xs text-white line-clamp-2">{{ $story->university }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        @endforeach
+                    </div>
                 </div>
             </div>
 
@@ -441,5 +499,119 @@
         </div>
     </footer>
 </body>
+<script>
+    document.querySelectorAll('[data-carousel]').forEach(carousel => {
+
+        const track = carousel.querySelector('.carousel-track');
+        const nextBtn = carousel.querySelector('.carousel-next');
+        const prevBtn = carousel.querySelector('.carousel-prev');
+        const pagination = carousel.querySelector('.carousel-pagination');
+
+        const cards = track.querySelectorAll('a');
+        const firstCard = cards[0];
+
+        const cardHeight = firstCard.offsetHeight;
+
+        prevBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
+        nextBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
+
+        prevBtn.style.height = cardHeight + "px";
+        nextBtn.style.height = cardHeight + "px";
+
+        let dots = [];
+        let currentPage = 0;
+        let layout = {};
+
+        function recomputeLayout() {
+            const computedStyle = window.getComputedStyle(track);
+            const gap = parseInt(computedStyle.columnGap || computedStyle.gap) || 0;
+            const cardWidth = firstCard.offsetWidth + gap;
+
+            const trackWidth = track.clientWidth;
+            const cardsPerPage = Math.floor(trackWidth / firstCard.offsetWidth) || 1;
+            const totalPages = Math.ceil(cards.length / cardsPerPage);
+
+            return {
+                cardWidth,
+                cardsPerPage,
+                totalPages
+            };
+        }
+
+        function updateButtons() {
+            const scrollLeft = track.scrollLeft;
+            const maxScroll = track.scrollWidth - track.clientWidth;
+
+            prevBtn.style.visibility = scrollLeft <= 0 ? "hidden" : "visible";
+            nextBtn.style.visibility = scrollLeft >= maxScroll - 1 ? "hidden" : "visible";
+        }
+
+        function setupPagination() {
+            if (!pagination) return;
+            pagination.innerHTML = "";
+            dots = [];
+
+            for (let i = 0; i < layout.totalPages; i++) {
+                const dot = document.createElement("div");
+                dot.className =
+                    "w-[56px] h-[5.25px] rounded-[30px] bg-[#5D5D5D] opacity-50 cursor-pointer transition";
+                pagination.appendChild(dot);
+                dots.push(dot);
+
+                dot.addEventListener("click", () => {
+                    track.scrollTo({
+                        left: i * layout.cardWidth * layout.cardsPerPage,
+                        behavior: "smooth"
+                    });
+                    currentPage = i;
+                    updateUI();
+                });
+            }
+        }
+
+        function updateUI() {
+            updateButtons();
+
+            if (!pagination) return;
+
+            const scrollLeft = track.scrollLeft;
+            currentPage = Math.round(scrollLeft / (layout.cardWidth * layout.cardsPerPage));
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("opacity-50", i !== currentPage);
+            });
+        }
+
+        function scrollNext() {
+            track.scrollBy({
+                left: layout.cardWidth * layout.cardsPerPage,
+                behavior: "smooth"
+            });
+            setTimeout(updateUI, 300);
+        }
+
+        function scrollPrev() {
+            track.scrollBy({
+                left: -layout.cardWidth * layout.cardsPerPage,
+                behavior: "smooth"
+            });
+            setTimeout(updateUI, 300);
+        }
+
+        nextBtn.addEventListener("click", scrollNext);
+        prevBtn.addEventListener("click", scrollPrev);
+        track.addEventListener("scroll", updateUI);
+
+        function initCarousel() {
+            layout = recomputeLayout();
+            setupPagination();
+            updateUI();
+        }
+
+        window.addEventListener("resize", initCarousel);
+
+        initCarousel();
+    });
+</script>
 
 </html>
