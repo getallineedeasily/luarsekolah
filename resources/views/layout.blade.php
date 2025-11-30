@@ -358,7 +358,7 @@
                         @foreach ($videoTestimonials as $video)
                             <a href=""
                                 style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.87%, rgba(0, 0, 0, 0.538119) 59.59%, rgba(0, 0, 0, 0.7) 100%), url('{{ $video->image }}');"
-                                class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center">
+                                class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center carousel-card">
                                 <div class="rounded-full border border-white w-9 h-9 flex items-center justify-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
                                         viewBox="0 0 21 21" fill="none">
@@ -411,7 +411,7 @@
                     <div class="carousel-track flex gap-5 flex-nowrap overflow-x-auto scrollbar-hide">
                         @foreach ($storyTestimonials as $story)
                             <a href=""
-                                class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col">
+                                class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col carousel-card">
                                 <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
                                     class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
                                     <span
@@ -507,7 +507,7 @@
         const prevBtn = carousel.querySelector('.carousel-prev');
         const pagination = carousel.querySelector('.carousel-pagination');
 
-        const cards = track.querySelectorAll('a');
+        const cards = track.querySelectorAll('.carousel-card');
         const firstCard = cards[0];
 
         const cardHeight = firstCard.offsetHeight;
