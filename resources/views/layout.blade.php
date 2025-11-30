@@ -61,36 +61,67 @@
         {{-- List Program PBI --}}
         <section class="pt-30">
             <div class="max-w-10/12 mx-auto">
+                <div class="relative"></div>
                 <h3 class="font-medium text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
                 <h5 class="text-[#5D5D5D] text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan
                     kebutuhanmu
                 </h5>
-                <div class="flex mt-8 gap-6 overflow-x-scroll mb-10">
-                    @foreach ($programs as $program)
-                        <div
-                            class="rounded-[10px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] w-[247px] shrink-0 flex flex-col">
-                            <div class="">
-                                <img class="rounded-t-[10px]" src="{{ $program->image }}" alt="">
-                            </div>
-                            <div class="p-4 h-full flex flex-col justify-between">
-                                <div>
-                                    <h4 class="text-[#1E1E1E] font-medium mb-4">
-                                        {{ $program->name }}
-                                    </h4>
-                                    <p class="text-sm text-[#4F4F4F]">{{ $program->mentor }} -
-                                    </p>
-                                    <p class="text-xs text-[#4F4F4F] mb-4">{{ $program->mentor_job }}</p>
-                                    <p class="text-sm font-medium text-[#4F4F4F] mb-8">Berpengalaman 5 tahun dalam
-                                        bidangnya
-                                    </p>
+                <div class="relative" data-carousel>
+
+                    {{-- previous button --}}
+                    <button id="programCarouselPrevBtn"
+                        style="background: radial-gradient(100% 61.04% at 100% 50%, #FFE066 22.12%, rgba(255, 234, 152, 0.674419) 72.6%, rgba(255, 255, 255, 0) 100%);"
+                        class="carousel-prev cursor-pointer absolute left-0  -translate-y-1/2 z-10 w-14 h-full flex items-center justify-center rounded-tl-[50px] rounded-bl-[50px]">
+                        <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="25"
+                            viewBox="0 0 15 25" fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+
+                    {{-- next button --}}
+                    <button id="programCarouselNextBtn"
+                        style="background: radial-gradient(100% 61.04% at 0% 50%, #FFE066 22.12%, rgba(255, 234, 152, 0.674419) 72.6%, rgba(255, 255, 255, 0) 100%);"
+                        class="carousel-next cursor-pointer absolute right-0 -translate-y-1/2 z-10 w-14 h-full flex items-center justify-center rounded-tr-[50px] rounded-br-[50px]">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25"
+                            fill="none">
+                            <path
+                                d="M0.548859 24.3913C0.197351 24.0397 -0.000116288 23.5629 -0.000116266 23.0657C-0.000116245 22.5685 0.197351 22.0917 0.548859 21.7401L9.83011 12.4588L0.54886 3.17758C0.207314 2.82395 0.0183239 2.35032 0.0225964 1.8587C0.0268679 1.36709 0.224059 0.896812 0.571699 0.549171C0.91934 0.20153 1.38961 0.00434056 1.88123 6.81193e-05C2.37285 -0.00420241 2.84648 0.184787 3.20011 0.526332L13.807 11.1332C14.1585 11.4848 14.356 11.9616 14.356 12.4588C14.356 12.956 14.1585 13.4328 13.807 13.7845L3.20011 24.3913C2.84849 24.7428 2.37167 24.9403 1.87448 24.9403C1.3773 24.9403 0.900474 24.7428 0.548859 24.3913Z"
+                                fill="black" />
+                        </svg>
+                    </button>
+
+                    <div class="px-10">
+                        <div class="carousel-track scrollbar-hide flex mt-8 gap-6 overflow-x-scroll mb-10">
+                            @foreach ($programs as $program)
+                                <div
+                                    class="rounded-[10px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] w-[calc(25%-1.5rem)] shrink-0 flex flex-col carousel-card">
+                                    <div class="">
+                                        <img class="rounded-t-[10px]" src="{{ $program->image }}" alt="">
+                                    </div>
+                                    <div class="p-4 h-full flex flex-col justify-between">
+                                        <div>
+                                            <h4 class="text-[#1E1E1E] font-medium mb-4">
+                                                {{ $program->name }}
+                                            </h4>
+                                            <p class="text-sm text-[#4F4F4F]">{{ $program->mentor }} -
+                                            </p>
+                                            <p class="text-xs text-[#4F4F4F] mb-4">{{ $program->mentor_job }}</p>
+                                            <p class="text-sm font-medium text-[#4F4F4F] mb-8">Berpengalaman 5 tahun
+                                                dalam
+                                                bidangnya
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <a class="inline-block text-center text-sm bg-[#FFD633] rounded-md p-2.5 h-[43px] text-black leading-[1.75] w-full"
+                                                href="#">Lihat Detail Program</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <a class="inline-block text-center text-sm bg-[#FFD633] rounded-md p-2.5 h-[43px] text-black leading-[1.75] w-full"
-                                        href="#">Lihat Detail Program</a>
-                                </div>
-                            </div>
+                            @endforeach
                         </div>
-                    @endforeach
+                    </div>
                 </div>
 
                 <div class="flex gap-8 justify-center items-center mb-20">
@@ -128,8 +159,8 @@
                         <a class="text-center text-sm rounded-md p-2.5 h-[43px] text-black leading-[1.75] border w-[243px] flex gap-2 justify-center items-center"
                             href="#">
                             <span>Konsultasi dengan kami</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
-                                fill="none">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
+                                viewBox="0 0 21 21" fill="none">
                                 <g clip-path="url(#clip0_407_3)">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M17.9402 3.04938C15.9664 1.08394 13.3412 0.000997181 10.5441 0C4.78047 0 0.0897435 4.66432 0.087738 10.3976C0.0867353 12.2304 0.568544 14.0194 1.48353 15.5959L0 20.9847L5.54304 19.5388C7.07017 20.3674 8.78984 20.8037 10.5396 20.8042H10.5441C16.3067 20.8042 20.998 16.1394 21 10.4061C21.001 7.62747 19.9145 5.01533 17.9402 3.04988V3.04938ZM10.5441 19.0482H10.5406C8.98135 19.0477 7.45173 18.6308 6.11712 17.8436L5.79975 17.6561L2.51032 18.5142L3.3882 15.3247L3.18163 14.9976C2.31177 13.6215 1.85202 12.031 1.85303 10.3981C1.85503 5.63308 5.75362 1.75604 10.5477 1.75604C12.8689 1.75703 15.0509 2.65699 16.6918 4.29087C18.3328 5.92426 19.2357 8.09614 19.2347 10.4051C19.2327 15.1706 15.3341 19.0477 10.5441 19.0477V19.0482ZM15.311 12.5755C15.0498 12.4453 13.7654 11.8171 13.5257 11.7304C13.2861 11.6436 13.1121 11.6002 12.9381 11.8605C12.7642 12.1208 12.2633 12.7061 12.1109 12.8791C11.9585 13.0526 11.806 13.0741 11.5448 12.9439C11.2836 12.8138 10.4418 12.5396 9.44364 11.6545C8.66705 10.9655 8.14258 10.1149 7.99021 9.85463C7.83778 9.59439 7.97417 9.45377 8.10448 9.32464C8.22179 9.20798 8.3657 9.02101 8.49654 8.86942C8.62744 8.71784 8.67055 8.60919 8.75776 8.43614C8.84502 8.26263 8.80139 8.1111 8.73623 7.98093C8.67102 7.85081 8.14864 6.5719 7.93053 6.05189C7.71843 5.54533 7.50289 5.61414 7.34294 5.60566C7.19052 5.59818 7.01657 5.59669 6.84209 5.59669C6.66762 5.59669 6.38482 5.6615 6.14518 5.92177C5.90555 6.18201 5.2307 6.81073 5.2307 8.08912C5.2307 9.36751 6.16677 10.6035 6.29761 10.7771C6.42845 10.9506 8.14007 13.5746 10.7607 14.7005C11.3839 14.9682 11.8707 15.1282 12.2502 15.2479C12.876 15.4458 13.4455 15.4179 13.8957 15.3511C14.3976 15.2763 15.4414 14.7224 15.659 14.1156C15.8766 13.5088 15.8766 12.9883 15.8114 12.8801C15.7463 12.7719 15.5718 12.7066 15.3106 12.5764L15.311 12.5755Z"
