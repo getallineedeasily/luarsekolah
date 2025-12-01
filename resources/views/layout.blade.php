@@ -20,23 +20,28 @@
     <header></header>
     <main>
         {{-- Hero --}}
-        <section class="bg-[#0F0F0F] text-white h-dvh pt-30">
+        <section style="background-image: url('{{ asset('images/hero-bg.png') }}');"
+            class="bg-[#0F0F0F] text-white h-dvh pt-30 bg-bottom-left bg-repeat-x">
             <div class="max-w-10/12 mx-auto">
-                <div class="w-[547px]">
-                    <h1 class="text-[42px] font-medium">Belajar Langsung dari Praktisi Berbagai Industri - bukan
-                        Sekedar Teori!
-                    </h1>
-                    <h5 class="text-sm pb-6">Dibimbing mentor profesional dari berbagai Industri & real
-                        project
-                    </h5>
+                <div class="flex flex-col items-center max-w-10/12 mx-auto">
+                    <div class="text-center">
+                        <h1 class="text-[42px] font-medium pb-2">Belajar Langsung dari Praktisi Berbagai Industri -
+                            bukan
+                            Sekedar Teori!
+                        </h1>
+                        <h5 class="text-xl pb-6">Dibimbing mentor profesional dari berbagai Industri & real
+                            project
+                        </h5>
+                    </div>
+                    <div class="flex gap-3 mb-24">
+                        <a class="block text-center text-sm bg-[#FFD633] rounded-md p-[18px] w-[162px] h-[56px] text-black"
+                            href="#">Daftar Sekarang</a>
+                        <a class="block text-center text-sm rounded-md p-[18px] w-[162px] h-[56px] border"
+                            href="#">Lihat
+                            Mentor</a>
+                    </div>
                 </div>
-                <div class="space-x-2.5 mb-18">
-                    <a class="inline-block text-center text-sm bg-[#FFD633] rounded-md p-2.5 w-[162px] h-[43px] text-black leading-[1.75]"
-                        href="#">Daftar Sekarang</a>
-                    <a class="inline-block text-center text-sm rounded-md p-2.5 w-[162px] h-[43px] border leading-[1.75]"
-                        href="#">Lihat
-                        Mentor</a>
-                </div>
+
                 <div class="grid grid-cols-4 text-center">
                     <div class="flex flex-col">
                         <span class="text-[42px] font-medium leading-none">700+</span>
@@ -57,6 +62,9 @@
                 </div>
             </div>
         </section>
+
+        <div style="background: linear-gradient(0deg, #FFFFFF 0%, #B0B0B0 30.29%, #888888 50.96%, #1E1E1E 100%);" class="h-[98px]">
+        </div>
 
         {{-- List Program PBI --}}
         <section class="pt-30">
