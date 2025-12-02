@@ -65,9 +65,11 @@
             </div>
         </section>
 
-        <div style="background: linear-gradient(0deg, #FFFFFF 0%, #B0B0B0 30.29%, #888888 50.96%, #1E1E1E 100%);"
-            class="h-[98px]">
-        </div>
+        {{-- Mentor --}}
+        <section
+            style="background: linear-gradient(180deg, #1E1E1E 90.38%, rgba(61, 61, 61, 0.864296) 92.78%, rgba(122, 122, 122, 0.589327) 95.03%, rgba(203, 203, 203, 0.233081) 97.44%, rgba(255, 255, 255, 0) 100%);" class="pt-16 pb-32">
+            <x-mentor></x-mentor>
+        </section>
 
         {{-- List Program PBI --}}
         <section class="pt-30">
