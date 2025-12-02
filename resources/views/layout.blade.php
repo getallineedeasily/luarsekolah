@@ -17,7 +17,9 @@
 </head>
 
 <body class="font-poppins">
-    <header></header>
+    <header class="bg-[#0F0F0F]">
+        <x-navbar></x-navbar>
+    </header>
     <main>
         {{-- Hero --}}
         <section style="background-image: url('{{ asset('images/hero-bg.png') }}');"
