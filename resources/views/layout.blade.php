@@ -350,6 +350,11 @@
             </div>
         </section>
 
+        {{-- Company Partner --}}
+        <section class="pb-20">
+            <x-partner></x-partner>
+        </section>
+
         {{-- Video Testimonials --}}
         <section style="background-image: linear-gradient(180deg, #927500 9.94%, #DCB000 66.39%, #FFFFFF 100%);"
             class="mx-4 rounded-t-[20px] py-10">
