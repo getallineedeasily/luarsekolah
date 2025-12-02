@@ -25,7 +25,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/afb76a4a6bfb7b237548ee4ae46691c6.png',
                 'mentor' => 'Luna Yofanda',
-                'mentor_job' => 'Accounting and Finance Associate at Shopee Indonesia',
+                'mentor_job' => 'Accounting and Finance Associate',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/592c3588008d3db09b386cb52e508a0d.png'
             ],
             [
                 'name' => 'Content Writing',
@@ -37,7 +38,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/b78b711845bab16b1cb07372e0da86a9.png',
                 'mentor' => 'Nasuha Ali',
-                'mentor_job' => 'Senior Copywriter at Ideku',
+                'mentor_job' => 'Senior Copywriter',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/71daf35f81c7b4ffc5a0385b554f9252.png'
             ],
             [
                 'name' => 'Data Analytic',
@@ -49,7 +51,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/37acaf2f68e69f70272d6d565f20c202.png',
                 'mentor' => 'Putu Rika Sahriana',
-                'mentor_job' => 'Data Analyst at Tech in Asia Singapore',
+                'mentor_job' => 'Data Analyst',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/aa596c4583102e6b8a96c8a65274c3d5.png'
             ],
             [
                 'name' => 'Digital Marketing',
@@ -61,7 +64,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/b6305eb2936b81e08de816fa8f3ad4ac.png',
                 'mentor' => 'Balad Al Barokah',
-                'mentor_job' => 'Digital Marketing Lead at Yesyou Official',
+                'mentor_job' => 'Digital Marketing Lead',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/2ce77301351d14de5ec72fc1f7724470.png'
             ],
             [
                 'name' => 'Graphic Design',
@@ -73,7 +77,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/9c49b7e5f764e115c8519178b7e95972.png',
                 'mentor' => 'Uli Afrilia Wahyu',
-                'mentor_job' => 'Graphic Designer at Supa (SuperAI)',
+                'mentor_job' => 'Graphic Designer',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/dc01f76f7dbd9a478f97a9acf66ccab3.png'
             ],
             [
                 'name' => 'Marketing Communication',
@@ -85,7 +90,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/c8638dd701e39b3fb413c7c8614b97aa.png',
                 'mentor' => 'Larasati Ahadianingtyas',
-                'mentor_job' => 'Marketing Communications Manager at Global Prestasi School Bandung',
+                'mentor_job' => 'Marketing Communications Manager',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/2427f5cabfdc28c92b2524a5b17ed0c8.png'
             ],
             [
                 'name' => 'Social Media Marketing',
@@ -97,7 +103,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/c8638dd701e39b3fb413c7c8614b97aa.png',
                 'mentor' => 'Laurensia Novi Oktaviani',
-                'mentor_job' => 'Founder & Head of Digital Productions at Go Digital Consultant',
+                'mentor_job' => 'Founder & Head of Digital Productions',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/7df809227396aeea8fcbfaaa5a99ac3b.png'
             ],
             [
                 'name' => 'Software Engineering (Mobile)',
@@ -109,7 +116,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/dddd25b2598e9f820b9a22e96571076e.png',
                 'mentor' => 'Muhammad Zahid Masruri',
-                'mentor_job' => 'Software Engineer at Nimbly Technologies',
+                'mentor_job' => 'Software Engineer',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/23633b74aab57b9a9b1148d7d17a8114.jpg'
             ],
             [
                 'name' => 'UI/UX Design',
@@ -121,7 +129,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/3ea8b706736a50eee9ed80ea0f640c56.png',
                 'mentor' => 'Raden Rizqan Fadhilah',
-                'mentor_job' => 'Product Designer at MATHSPACE',
+                'mentor_job' => 'Product Designer',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/84fe9a63000f9d0daf4bfdbb9ad004d0.png'
             ],
             [
                 'name' => 'Web Development',
@@ -133,7 +142,8 @@ class ProgramSeeder extends Seeder
                 ],
                 'image' => 'https://pbi.belajarbekerja.com/upload/project/gambar_project/4f711692fa2231e8cb0c4a0965594298.png',
                 'mentor' => 'Muhammad Ilham Pasya',
-                'mentor_job' => 'Software Engineer at Midstay',
+                'mentor_job' => 'Software Engineer',
+                'mentor_image' => 'https://pbi.belajarbekerja.com/upload/gambar_user/968dcc7eacf3f294cc668631731a3ea2.png'
             ],
         ];
 

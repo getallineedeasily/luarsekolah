@@ -22,6 +22,7 @@ class Program extends Model
         'image',
         'mentor',
         'mentor_job',
+        'mentor_image'
     ];
 
     /**

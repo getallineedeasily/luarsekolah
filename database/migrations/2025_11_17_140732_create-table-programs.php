@@ -18,6 +18,7 @@ return new class extends Migration {
             $table->text('image')->nullable();
             $table->string('mentor')->nullable();
             $table->string('mentor_job')->nullable();
+            $table->text('mentor_image')->nullable();
             $table->timestamps();
         });
     }
