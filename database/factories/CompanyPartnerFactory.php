@@ -18,11 +18,8 @@ class CompanyPartnerFactory extends Factory
     {
         return [
             'name' => fake()->company(),
-            'address' => fake()->address(),
-            'email' => fake()->unique()->companyEmail(),
-            'phone' => fake()->phoneNumber(),
-            'website' => fake()->url(),
-            'description' => fake()->sentence(10),
+            'type' => 'alumni',
+            'image' => 'image.jpg',
         ];
     }
 }
