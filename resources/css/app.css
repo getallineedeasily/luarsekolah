@@ -22,3 +22,8 @@
     -ms-overflow-style: none; /* IE & Edge */
     scrollbar-width: none; /* Firefox */
 }
+
+.arrow-path {
+    fill: #c39c00;
+    transition: fill 0.3s;
+}

@@ -34,14 +34,19 @@ class FAQSeeder extends Seeder
             ],
             [
                 'question' => 'Bagaimana saya bisa mendapatkan sertifikat setelah mengikuti program Project-based Internship ini?',
-                'answer' => 'Kamu akan mendapatkan sertifikat apabila memenuhi jumlah kehadiran dan kelengkapan tugas, dengan ketentuan sebagai berikut: \n Durasi 1 bulan : Maksimal 1 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas \n Durasi 2 bulan : Maksimal 2 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas \nDurasi 3 bulan : Maksimal 2 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas'
+                'answer' => 'Kamu akan mendapatkan sertifikat apabila memenuhi jumlah kehadiran dan kelengkapan tugas, dengan ketentuan sebagai berikut: <br>
+<ul class="list-disc pl-6">
+    <li>Durasi 1 bulan : Maksimal 1 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas</li>
+    <li>Durasi 2 bulan : Maksimal 2 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas</li>
+    <li>Durasi 3 bulan : Maksimal 2 kali tidak hadir dan tidak mengerjakan tugas dengan keterangan jelas</li>
+</ul>'
             ],
             [
                 'question' => 'Bagaimana cara saya dapat melakukan konversi SKS?',
                 'answer' => 'Konversi SKS yang dimaksud pada program Project-based Internship ini adalah konversi SKS untuk mata kuliah Wajib Magang/PKL/KKL/Kerja Praktik dan sejenisnya sesuai dengan kebijakan masing - masing perguruan tinggi. Tidak berarti setara dengan nominal SKS tertentu. Peserta dapat mengajukan konversi SKS ini ke tim Talent Management di channel Discord program.'
             ],
         ];
-        
+
         foreach ($faq as $value) {
             FAQ::factory()->create($value);
         }
