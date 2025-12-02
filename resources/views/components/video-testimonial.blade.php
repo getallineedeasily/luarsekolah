@@ -16,7 +16,7 @@
 
          {{-- previous button --}}
          <button id="videoTestimonialCarouselPrevBtn"
-             style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+             style="background: linear-gradient(268.51deg, rgba(115, 115, 115, 0.0658) 1.26%, rgba(70, 70, 70, 0.3196) 31.87%, rgba(15, 15, 15, 0.47) 98.74%);"
              class="carousel-prev cursor-pointer absolute left-0  -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
              <svg class="rotate-180" xmlns="http://www.w3.org/2000/svg" width="15" height="25"
                  viewBox="0 0 15 25" fill="none">
@@ -28,7 +28,7 @@
 
          {{-- next button --}}
          <button id="videoTestimonialCarouselNextBtn"
-             style="background: linear-gradient(270deg, rgba(15, 15, 15, 0.47) -63.17%, rgba(70, 70, 70, 0.3196) 48.77%, rgba(115, 115, 115, 0.0658) 100%);"
+             style="background: linear-gradient(268.51deg, rgba(115, 115, 115, 0.0658) 1.26%, rgba(70, 70, 70, 0.3196) 31.87%, rgba(15, 15, 15, 0.47) 98.74%);"
              class="carousel-next cursor-pointer absolute right-0  -translate-y-1/2 z-10 w-10 h-full flex items-center justify-center rounded-md">
              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="25" viewBox="0 0 15 25" fill="none">
                  <path
