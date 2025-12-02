@@ -13,10 +13,7 @@ class CompanyPartner extends Model
 
     protected $fillable = [
         'name',
-        'address',
-        'email',
-        'phone',
-        'website',
-        'description',
+        'type',
+        'image',
     ];
 }
