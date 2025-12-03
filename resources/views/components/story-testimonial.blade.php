@@ -10,18 +10,20 @@
                 <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
                     class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
                     <span class="font-semibold text-lg lg:text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
-                    <span class="font-medium text-xs lg:text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
+                    <span
+                        class="font-medium text-xs lg:text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
                 </div>
                 <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
-                    <div class="space-y-4">
+                    <div class="space-y-6">
                         <p class="font-medium text-xs text-white">Benefit utama</p>
                         <p class="font-medium text-xs text-white">Hasil belajar</p>
-                        <p class="font-medium text-xs text-white">Kalimat singkat testimoni</p>
+                        <p class="font-medium text-xs text-[#DCB000] text-center">Kalimat singkat testimoni</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <img class="w-[33px] h-[33px] rounded-[10px]" src="{{ $story->university_image }}"
                             alt="{{ $story->university }}">
-                        <span class="font-medium text-xs text-white line-clamp-2">{{ $story->university }}</span>
+                        <span
+                            class="font-medium text-xs text-white line-clamp-2">{{ "Mahasiswa $story->university" }}</span>
                     </div>
                 </div>
             </a>
@@ -35,15 +37,16 @@
                 <span class="font-medium text-xs lg:text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
             </div>
             <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
-                <div class="space-y-4">
+                <div class="space-y-6">
                     <p class="font-medium text-xs text-white">Benefit utama</p>
                     <p class="font-medium text-xs text-white">Hasil belajar</p>
-                    <p class="font-medium text-xs text-white">Kalimat singkat testimoni</p>
+                    <p class="font-medium text-xs text-[#DCB000] text-center">Kalimat singkat testimoni</p>
                 </div>
                 <div class="flex items-center gap-4">
                     <img class="w-[33px] h-[33px] rounded-[10px]" src="{{ $story->university_image }}"
                         alt="{{ $story->university }}">
-                    <span class="font-medium text-xs text-white line-clamp-2">{{ $story->university }}</span>
+                    <span
+                        class="font-medium text-xs text-white line-clamp-2">{{ "Mahasiswa $story->university" }}</span>
                 </div>
             </div>
             <div style="background-color: rgba(15, 15, 15, 0.42); backdrop-filter: blur(7.199px);"
