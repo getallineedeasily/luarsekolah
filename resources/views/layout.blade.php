@@ -52,7 +52,8 @@
         </section>
 
         {{-- Video Testimonials --}}
-        <section style="background-image: linear-gradient(180deg, #927500 9.94%, #DCB000 66.39%, #FFFFFF 100%);"
+        <section
+            style="background-image: linear-gradient(180deg, #564500 25.48%, #927500 59.13%, #DCB000 77.88%, #FFFFFF 100%);"
             class="mx-4 rounded-t-[20px] py-10 px-4 lg:px-0">
             <x-video-testimonial />
         </section>
@@ -69,7 +70,7 @@
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-[#FFFCEF] py-20 font-inter px-4 lg:px-0">
+    <footer class="bg-[#FFEA98AC] py-20 font-inter px-4 lg:px-0">
         <div class="w-full lg:max-w-10/12 mx-auto">
             {{-- Top Footer --}}
             <x-top-footer></x-top-footer>
