@@ -1,9 +1,9 @@
-<div class="pb-20 grid grid-cols-5 gap-10">
+<div class="pb-20 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-10 text-xs lg:text-[15px]">
     <div class="space-y-8">
         <div>
             <img src="{{ asset('images/Logo_BB_Putih.png') }}" alt="Logo_BB_Putih">
         </div>
-        <p class="font-medium text-[15px]">Headquarter Centennial Tower Level 29, Jl Jend Gatot Subroto
+        <p class="font-medium ">Headquarter Centennial Tower Level 29, Jl Jend Gatot Subroto
             No.27,
             Karet Semanggi, Setiabudi Daerah Khusus Ibukota Jakarta 12950</p>
         <div class="flex justify-start gap-4 items-center">
@@ -14,7 +14,7 @@
                         fill="#111B21" />
                 </svg>
             </aside>
-            <div class="font-medium text-[15px] text-[#1E1E1E]">
+            <div class="font-medium  text-[#1E1E1E]">
                 <p class="">Whatsapp</p>
                 <p class="underline">+62 811-2021-444</p>
             </div>
@@ -28,33 +28,33 @@
                         fill="black" />
                 </svg>
             </aside>
-            <div class="font-medium text-[15px] text-[#1E1E1E]">
+            <div class="font-medium  text-[#1E1E1E]">
                 <p class="">Email</p>
                 <p class="underline">info@luarsekolah.com</p>
             </div>
         </div>
-        <div class="font-medium text-[15px] text-[#1E1E1E]">
+        <div class="font-medium  text-[#1E1E1E]">
             <p>Jam pelayanan konsumen</p>
             <p>(09:00-17:00)</p>
         </div>
     </div>
     <div class="flex flex-col gap-4">
-        <p class="text-[15px] font-medium">Produk</p>
-        <a class="text-[15px] font-medium underline" href="#">Luarsekolah</a>
-        <a class="text-[15px] font-medium underline" href="#">Project Based Internship (PBI)</a>
-        <a class="text-[15px] font-medium underline" href="#">Belajar Bekerja Bootcamp</a>
-        <a class="text-[15px] font-medium underline" href="#">Aplikasi <span
+        <p class=" font-medium">Produk</p>
+        <a class=" font-medium underline" href="#">Luarsekolah</a>
+        <a class=" font-medium underline" href="#">Project Based Internship (PBI)</a>
+        <a class=" font-medium underline" href="#">Belajar Bekerja Bootcamp</a>
+        <a class=" font-medium underline" href="#">Aplikasi <span
                 class="text-[#0071FF]">segera</span></a>
     </div>
     <div class="flex flex-col gap-4">
-        <p class="text-[15px] font-medium">Perusahaan</p>
-        <a class="text-[15px] font-medium underline" href="#">Tentang Kami</a>
-        <a class="text-[15px] font-medium underline" href="#">FAQ</a>
-        <a class="text-[15px] font-medium underline" href="#">Gabung Komunitas</a>
-        <a class="text-[15px] font-medium underline" href="#">Blog</span></a>
+        <p class=" font-medium">Perusahaan</p>
+        <a class=" font-medium underline" href="#">Tentang Kami</a>
+        <a class=" font-medium underline" href="#">FAQ</a>
+        <a class=" font-medium underline" href="#">Gabung Komunitas</a>
+        <a class=" font-medium underline" href="#">Blog</span></a>
     </div>
     <div class="flex flex-col gap-4">
-        <p class="text-[15px] font-medium">Media Sosial</p>
+        <p class=" font-medium">Media Sosial</p>
         <div class="flex justify-start gap-2 items-center">
             <aside class="size-5">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -65,7 +65,7 @@
                 </svg>
 
             </aside>
-            <a class="text-[15px] font-medium underline" href="#">Instagram</a>
+            <a class=" font-medium underline" href="#">Instagram</a>
         </div>
 
         <div class="flex justify-start gap-2 items-center">
@@ -79,7 +79,7 @@
 
 
             </aside>
-            <a class="text-[15px] font-medium underline" href="#">Youtube</a>
+            <a class=" font-medium underline" href="#">Youtube</a>
         </div>
 
         <div class="flex justify-start gap-2 items-center">
@@ -92,7 +92,7 @@
                 </svg>
 
             </aside>
-            <a class="text-[15px] font-medium underline" href="#">TikTok</a>
+            <a class=" font-medium underline" href="#">TikTok</a>
         </div>
 
         <div class="flex justify-start gap-2 items-center">
@@ -104,26 +104,26 @@
                         fill="black" />
                 </svg>
             </aside>
-            <a class="text-[15px] font-medium underline" href="#">LinkedIn</a>
+            <a class=" font-medium underline" href="#">LinkedIn</a>
         </div>
 
     </div>
     <div class="flex flex-col gap-4">
-        <p class="text-[15px] font-medium">Metode Pembayaran</p>
+        <p class=" font-medium">Metode Pembayaran</p>
         <div class="space-y-4">
-            <p class="text-[15px] font-medium">Partner</p>
+            <p class=" font-medium">Partner</p>
             <img class="w-[83px]" src="{{ asset('images/footer/midtrans.png') }}" alt="">
         </div>
         <div class="space-y-4">
-            <p class="text-[15px] font-medium">Kartu Kredit</p>
-            <div class="grid grid-cols-3 gap-3">
+            <p class=" font-medium">Kartu Kredit</p>
+            <div class="grid grid-cols-5 sm:grid-cols-3 gap-3">
                 <img class="w-[62px]" src="{{ asset('images/footer/mastercard.png') }}" alt="">
                 <img class="w-[62px]" src="{{ asset('images/footer/visa.png') }}" alt="">
             </div>
         </div>
         <div class="space-y-4">
-            <p class="text-[15px] font-medium">Bank Transfer</p>
-            <div class="grid grid-cols-3 gap-3">
+            <p class=" font-medium">Bank Transfer</p>
+            <div class="grid grid-cols-5 sm:grid-cols-3 gap-3">
                 <img class="w-[62px]" src="{{ asset('images/footer/bca.png') }}" alt="">
                 <img class="w-[62px]" src="{{ asset('images/footer/bni.png') }}" alt="">
                 <img class="w-[62px]" src="{{ asset('images/footer/bri.png') }}" alt="">
@@ -133,7 +133,7 @@
             </div>
         </div>
         <div class="space-y-3">
-            <p class="text-[15px] font-medium">QRIS</p>
+            <p class=" font-medium">QRIS</p>
             <img class="w-[112px]" src="{{ asset('images/footer/qris.png') }}" alt="">
         </div>
     </div>

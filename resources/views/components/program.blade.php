@@ -1,7 +1,7 @@
-<div class="max-w-10/12 mx-auto">
+<div class="w-full lg:max-w-10/12 mx-auto">
     <div class="relative"></div>
-    <h3 class="font-medium text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
-    <h5 class="text-[#5D5D5D] text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan
+    <h3 class="font-medium text-xl lg:text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
+    <h5 class="text-[#5D5D5D] text-sm sm:text-lg lg:text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan
         kebutuhanmu
     </h5>
     <div class="relative" data-carousel>
@@ -33,9 +33,9 @@
             <div class="carousel-track scrollbar-hide flex mt-8 gap-6 overflow-x-scroll mb-10">
                 @foreach ($programs as $program)
                     <div
-                        class="rounded-[10px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] w-[calc(25%-1.5rem)] shrink-0 flex flex-col carousel-card">
+                        class="rounded-[10px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.08)] w-fit sm:w-[calc(100%/2-1.5rem)] lg:w-[calc(100%/3-1.5rem)] xl:w-[calc(25%-1.5rem)] 2xl:w-[calc(100%/7-1.5rem)] shrink-0 flex flex-col carousel-card">
                         <div class="">
-                            <img class="rounded-t-[10px]" src="{{ $program->image }}" alt="">
+                            <img class="rounded-t-[10px] w-full" src="{{ $program->image }}" alt="">
                         </div>
                         <div class="p-4 h-full flex flex-col justify-between">
                             <div>
@@ -82,14 +82,14 @@
         </div>
     </div>
 
-    <div class="flex gap-8 justify-center items-center mb-20">
-        <p class="italic text-sm text-[#000000]">September 2025 <span class="text-[#454545]">udah ditutup
+    <div class="flex flex-col xl:flex-row gap-8 justify-center items-center mb-20 mt-10 sm:mt-0">
+        <p class="italic text-sm text-[#000000] text-center">September 2025 <span class="text-[#454545]">udah ditutup
                 nih. Tunggu kami
                 di batch selanjutnya, ya! </span> </p>
-        <a class="text-center text-sm bg-[#FFD633] rounded-md p-2.5 h-[43px] text-black leading-[1.75] shadow-[0px_8px_16px_0px_rgba(0,0,0,0.08)] flex gap-2.5 px-8"
+        <a class="text-center text-sm bg-[#FFD633] rounded-md p-2.5 sm:h-[43px] text-black leading-[1.75] shadow-[0px_8px_16px_0px_rgba(0,0,0,0.08)] flex gap-1.5 items-center sm:gap-2.5 sm:px-8"
             href="#">
-            <span>Join Waiting list (bulan desember) sekarang</span>
-            <svg class="" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
+            <span class="text-sm lg:text-base">Join Waiting list (bulan desember) sekarang</span>
+            <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
                 fill="none">
                 <path
                     d="M13.5625 1.75V4.375M5.6875 1.75V4.375M9.625 1.75V4.375M16.625 10.5V9.1875C16.625 6.3 16.625 4.85625 15.7281 3.95938C14.8313 3.0625 13.3875 3.0625 10.5 3.0625H8.75C5.8625 3.0625 4.41875 3.0625 3.52188 3.95938C2.625 4.85625 2.625 6.3 2.625 9.1875L2.625 13.125C2.625 16.0125 2.625 17.4563 3.52188 18.3531C4.41875 19.25 5.8625 19.25 8.75 19.25H9.625M6.125 13.125H9.625M6.125 9.625H13.125M13.7699 18.9464L12.25 19.25L12.5536 17.7301C12.6149 17.4221 12.7671 17.1386 12.9902 16.9164L16.5471 13.3586C16.6211 13.2845 16.7089 13.2258 16.8056 13.1857C16.9023 13.1456 17.0059 13.1249 17.1106 13.1249C17.2153 13.1249 17.3189 13.1456 17.4156 13.1857C17.5123 13.2258 17.6002 13.2845 17.6741 13.3586L18.1414 13.8259C18.2155 13.8998 18.2742 13.9877 18.3143 14.0844C18.3544 14.1811 18.3751 14.2847 18.3751 14.3894C18.3751 14.4941 18.3544 14.5977 18.3143 14.6944C18.2742 14.7911 18.2155 14.8789 18.1414 14.9529L14.5845 18.5097C14.3627 18.7335 14.079 18.8856 13.7699 18.9464Z"
@@ -98,13 +98,13 @@
     </div>
 
     <div class="bg-[#FFCC00] rounded-[10px] p-5 space-y-2.5 shadow-[0px_8px_16px_0px_rgba(0,0,0,0.08)]">
-        <h2 class="font-medium text-[28px] text-[#0F0F0F] w-1/2">Masih ragu ? Kenali dulu mentornya
+        <h2 class="font-medium text-xl lg:text-[28px] text-[#0F0F0F] w-full sm:w-1/2">Masih ragu ? Kenali dulu mentornya
             & rasakan value-nya!</h2>
         <span class="text-sm text-[#3D3D3D] block mb-5">No worries, coba mini PBI yang langsung dibimbing
             dengan
             mentor kami & rasakan
             impactnya!</span>
-        <div class="flex gap-4">
+        <div class="flex flex-col sm:flex-row gap-4">
             <a class="text-center text-sm bg-[#0F0F0F] rounded-md p-2.5 h-[43px] text-white leading-[1.75] w-[243px] flex gap-2 justify-center items-center"
                 href="#">
                 <span>Coba mini PBI</span>

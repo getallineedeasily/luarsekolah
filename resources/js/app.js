@@ -55,7 +55,7 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
         for (let i = 0; i < layout.totalPages; i++) {
             const dot = document.createElement("div");
             dot.className =
-                "w-[56px] h-[5.25px] rounded-[30px] bg-[#5D5D5D] opacity-50 cursor-pointer transition";
+                "w-[10px] sm:w-[56px] h-[5.25px] rounded-[30px] bg-[#5D5D5D] opacity-50 cursor-pointer transition";
             pagination.appendChild(dot);
             dots.push(dot);
 

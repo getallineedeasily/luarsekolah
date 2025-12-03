@@ -1,11 +1,11 @@
- <div class="max-w-10/12 mx-auto">
-     <div class="w-10/12 space-y-5 mb-10">
-         <h3 class="font-medium text-[42px] text-white leading-tight">Intip Keseruan Project-Based
+ <div class="w-full lg:max-w-10/12 mx-auto">
+     <div class="w-full sm:w-10/12 space-y-5 mb-10">
+         <h3 class="font-medium text-xl sm:text-3xl lg:text-[42px] text-white leading-tight">Intip Keseruan Project-Based
              Internship
              Luarsekolah</h3>
-         <h4 class="font-medium text-2xl text-[#E7E7E7]">Dokumentasi Alumni - Luarsekolah</h4>
+         <h4 class="font-medium text-base sm:text-lg lg:text-2xl text-[#E7E7E7]">Dokumentasi Alumni - Luarsekolah</h4>
          <a href="#" class="rounded-[38px] bg-white flex justify-center items-center gap-1 w-[169px] p-2.5">
-             <span class="text-sm">Mulai nonton</span>
+             <span class="text-xs lg:text-sm">Mulai nonton</span>
              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                  <path d="M7 4.49756V16.7476L16.625 10.6226L7 4.49756Z" fill="black" />
              </svg>
@@ -42,7 +42,7 @@
              @foreach ($videoTestimonials as $video)
                  <a href=""
                      style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 25.87%, rgba(0, 0, 0, 0.538119) 59.59%, rgba(0, 0, 0, 0.7) 100%), url('{{ $video->image }}');"
-                     class="rounded-md w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center carousel-card">
+                     class="rounded-md w-[calc(100%)] sm:w-[calc(100%/3-1rem)] h-[187px] shrink-0 bg-no-repeat bg-cover bg-center flex justify-center items-center carousel-card">
                      <div class="rounded-full border border-white w-9 h-9 flex items-center justify-center">
                          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"
                              fill="none">

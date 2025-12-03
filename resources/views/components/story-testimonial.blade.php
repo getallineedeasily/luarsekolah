@@ -1,16 +1,16 @@
-<div class="max-w-10/12 mx-auto pb-8">
-    <h4 class="font-medium text-2xl pb-8">Testimoni Nyata dari Alumni yang Berhasil Berkembang di Dunia
+<div class="w-full lg:max-w-10/12 mx-auto pb-8">
+    <h4 class="font-medium text-lg lg:text-2xl pb-8">Testimoni Nyata dari Alumni yang Berhasil Berkembang di Dunia
         Tech
     </h4>
 
-    <div class="flex gap-5 flex-nowrap">
+    <div class="flex gap-5 flex-nowrap overflow-x-scroll scrollbar-hide">
         @foreach (collect($storyTestimonials)->take(3) as $story)
             <a href="#"
-                class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col carousel-card bg-[#564500]">
+                class="w-[calc(100%-3rem)] min-w-[425px]:w-[calc(100%-10rem)] sm:w-[calc(100%/3-3rem)] lg:w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col carousel-card bg-[#564500]">
                 <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
                     class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
-                    <span class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
-                    <span class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
+                    <span class="font-semibold text-lg lg:text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
+                    <span class="font-medium text-xs lg:text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
                 </div>
                 <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
                     <div class="space-y-4">
@@ -28,11 +28,11 @@
         @endforeach
 
         <a href="#"
-            class="w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col carousel-card relative bg-[#564500]">
+            class="w-[calc(100%-3rem)] min-w-[425px]:w-[calc(100%-10rem)] sm:w-[calc(100%/3-3rem)] lg:w-[calc(25%-1.25rem)] border-2 border-solid border-[#B0B0B0] shrink-0 rounded-md h-[382px] flex flex-col carousel-card relative bg-[#564500]">
             <div style="background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 42.89%, rgba(0, 0, 0, 0.5) 68.75%), url('{{ $story->image }}');"
                 class="flex flex-col justify-end bg-no-repeat bg-cover bg-center h-[147px] p-4 rounded-t-md shrink-0">
-                <span class="font-semibold text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
-                <span class="font-medium text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
+                <span class="font-semibold text-lg lg:text-[22px] text-white line-clamp-1">{{ $story->name }}</span>
+                <span class="font-medium text-xs lg:text-sm text-white line-clamp-1">{{ $story->program_name }}</span>
             </div>
             <div class="bg-[#564500] p-4 h-full flex flex-col justify-between rounded-b-md">
                 <div class="space-y-4">

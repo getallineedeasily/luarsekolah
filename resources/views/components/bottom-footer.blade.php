@@ -1,4 +1,4 @@
-<div class="border-t pt-6 font-medium text-[15px]">
+<div class="border-t pt-6 font-medium text-xs lg:text-[15px]">
     <p class="mb-6">&copy; 2025 Belajar Bekerja. All rights reserved.</p>
     <p>Belajar Bekerja merupakan program untuk mempersiapkan individu
         menjadi lebih siap secara
