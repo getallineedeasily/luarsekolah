@@ -79,6 +79,9 @@
             <x-bottom-footer></x-bottom-footer>
         </div>
     </footer>
+
+    {{-- FAB --}}
+    <x-fab />
 </body>
 
 </html>
