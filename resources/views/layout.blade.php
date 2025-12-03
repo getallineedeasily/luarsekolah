@@ -17,60 +17,60 @@
 </head>
 
 <body class="font-poppins">
-    <header class="bg-[#0F0F0F]">
+    <header class="bg-[#0F0F0F] px-4 lg:px-0">
         <x-navbar></x-navbar>
     </header>
 
     <main>
         {{-- Hero --}}
         <section style="background-image: url('{{ asset('images/hero-bg.png') }}');"
-            class="bg-[#0F0F0F] text-white h-dvh bg-bottom-left bg-repeat-x flex flex-col justify-center items-center">
+            class="bg-[#0F0F0F] text-white min-h-dvh bg-bottom-left bg-repeat-x flex flex-col justify-center items-center px-4 lg:px-0">
             <x-hero></x-hero>
         </section>
 
         {{-- Mentor --}}
         <section
             style="background: linear-gradient(180deg, #1E1E1E 90.38%, rgba(61, 61, 61, 0.864296) 92.78%, rgba(122, 122, 122, 0.589327) 95.03%, rgba(203, 203, 203, 0.233081) 97.44%, rgba(255, 255, 255, 0) 100%);"
-            class="pt-4 pb-32">
+            class="pt-4 pb-32 px-4 lg:px-0">
             <x-mentor></x-mentor>
         </section>
 
         {{-- List Program PBI --}}
-        <section class="pt-4">
+        <section class="pt-4 px-4 lg:px-0">
             <x-program> </x-program>
         </section>
 
 
         {{-- Benefit --}}
-        <section class="py-20">
+        <section class="py-20 px-4 lg:px-0">
             <x-benefit />
         </section>
 
         {{-- Company Partner --}}
-        <section class="pb-20">
+        <section class="pb-20 px-4 lg:px-0">
             <x-partner></x-partner>
         </section>
 
         {{-- Video Testimonials --}}
         <section style="background-image: linear-gradient(180deg, #927500 9.94%, #DCB000 66.39%, #FFFFFF 100%);"
-            class="mx-4 rounded-t-[20px] py-10">
+            class="mx-4 rounded-t-[20px] py-10 px-4 lg:px-0">
             <x-video-testimonial />
         </section>
 
         {{-- Story Testimonial --}}
-        <section class="mx-4 pt-4 pb-10">
+        <section class="mx-4 pt-4 pb-10 px-4 lg:px-0">
             <x-story-testimonial />
         </section>
 
         {{-- FAQ --}}
-        <section class="py-12">
+        <section class="py-12 px-4 lg:px-0">
             <x-faq></x-faq>
         </section>
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-[#FFFCEF] py-20 font-inter">
-        <div class="max-w-10/12 mx-auto">
+    <footer class="bg-[#FFFCEF] py-20 font-inter px-4 lg:px-0">
+        <div class="w-full lg:max-w-10/12 mx-auto">
             {{-- Top Footer --}}
             <x-top-footer></x-top-footer>
 

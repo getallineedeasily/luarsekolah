@@ -1,16 +1,16 @@
- <div class="max-w-10/12 mx-auto">
-     <h3 class="text-[#0F0F0F] font-medium text-2xl text-center pb-2.5">Bangun Portfolio dari kasus Industri
+ <div class="w-full lg:max-w-10/12 mx-auto">
+     <h3 class="text-[#0F0F0F] font-medium text-xl lg:text-2xl text-center pb-2.5">Bangun Portfolio dari kasus Industri
          dipandu
          dengan mentor dari
          berbagai perusahaan</h3>
-     <h5 class="text-[#5D5D5D] text-center">Grup mentoring dari mentor expert memastikan kamu memahami
+     <h5 class="text-[#5D5D5D] text-center text-sm lg:text-base">Grup mentoring dari mentor expert memastikan kamu memahami
          standar industri & hasil bisa konversi
          SKS</h5>
 
-     <div class="mt-10 flex gap-6 items-center">
+     <div class="mt-10 flex flex-wrap sm:flex-nowrap gap-6 items-center">
          <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-1.jpg') }}');"
-             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
-             <div class="flex flex-col h-full justify-between w-3/4">
+             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-full sm:w-1/2'>
+             <div class="flex flex-col h-full justify-between w-full sm:w-3/4">
                  <div>
                      <div class="flex items-center gap-6 mb-5">
                          <span class="bg-[#FFF5CD] rounded-full p-1"><svg xmlns="http://www.w3.org/2000/svg"
@@ -19,18 +19,18 @@
                                      d="M7.49312 8.4922H16.4848V7.49312H7.49312V8.4922ZM5.61085 19.9816C5.16326 19.9816 4.78228 19.8244 4.4679 19.5101C4.15353 19.1957 3.99634 18.815 3.99634 18.3681V5.60985C3.99634 5.1636 4.15353 4.78295 4.4679 4.4679C4.78228 4.15353 5.16326 3.99634 5.61085 3.99634H18.3681C18.8144 3.99634 19.195 4.15353 19.5101 4.4679C19.8244 4.78228 19.9816 5.16326 19.9816 5.61085V10.0178C19.586 9.5762 19.1198 9.23085 18.5829 8.98175C18.0461 8.73265 17.4746 8.6081 16.8685 8.6081C15.9533 8.6081 15.1261 8.87252 14.3868 9.40137C13.6475 9.93021 13.1193 10.6262 12.8022 11.4894H7.49312V12.4885H12.5135C12.4542 12.9368 12.4735 13.3787 12.5714 13.8143C12.6687 14.2499 12.8269 14.6662 13.046 15.0632C12.8795 15.1271 12.7163 15.191 12.5565 15.255C12.3959 15.3196 12.2388 15.3965 12.0849 15.4858H7.49312V16.4848H10.9729C10.6432 16.8379 10.3971 17.2448 10.2346 17.7057C10.0721 18.1666 9.99082 18.6385 9.99082 19.1214V19.9816H5.61085ZM12.3736 19.9816V19.0825C12.3736 18.7727 12.4519 18.492 12.6084 18.2402C12.7656 17.9885 12.9844 17.8066 13.2648 17.6947C13.8256 17.4583 14.4074 17.2808 15.0102 17.1622C15.613 17.0437 16.2324 16.9844 16.8685 16.9844C17.4799 16.9844 18.087 17.0437 18.6898 17.1622C19.2926 17.2808 19.8871 17.4586 20.4732 17.6957C20.7536 17.807 20.9724 17.9885 21.1296 18.2402C21.2861 18.4913 21.3644 18.7721 21.3644 19.0825V19.9816H12.3736ZM16.8695 14.9862C16.3233 14.9862 15.8538 14.7897 15.4608 14.3968C15.0678 14.0038 14.8713 13.5342 14.8713 12.9881C14.8713 12.4419 15.0678 11.9723 15.4608 11.5794C15.8538 11.1864 16.3233 10.9899 16.8695 10.9899C17.415 10.9899 17.8846 11.1864 18.2782 11.5794C18.6712 11.9723 18.8677 12.4419 18.8677 12.9881C18.8677 13.5342 18.6712 14.0038 18.2782 14.3968C17.8852 14.7897 17.4157 14.9862 16.8695 14.9862Z"
                                      fill="black" />
                              </svg></span>
-                         <p class="text-white font-lexend">Real Project Portfolio</p>
+                         <p class="text-white font-lexend text-sm lg:text-base">Real Project Portfolio</p>
                      </div>
-                     <p class="text-sm text-white">Bangun Portfolio dari real-case industri
+                     <p class="text-xs lg:text-sm text-white">Bangun Portfolio dari real-case industri
                          yang divalidasi oleh mentor expert</p>
                  </div>
-                 <a class="block text-center text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
+                 <a class="block text-center text-xs lg:text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
                      href="#">Lihat Portofolio</a>
              </div>
          </div>
          <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-2.png') }}');"
-             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
-             <div class="flex flex-col h-full justify-between w-3/4">
+             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-full sm:w-1/2'>
+             <div class="flex flex-col h-full justify-between w-full sm:w-3/4">
                  <div>
                      <div class="flex items-center gap-6 mb-5">
                          <span class="bg-[#FFF5CD] rounded-full p-1">
@@ -41,15 +41,15 @@
                                      fill="black" />
                              </svg>
                          </span>
-                         <p class="text-white font-lexend">Dibimbing Expert Mentor</p>
+                         <p class="text-white font-lexend text-sm lg:text-base">Dibimbing Expert Mentor</p>
                      </div>
-                     <p class="text-sm text-white">Sesi review, feedback, dan diskusi
+                     <p class="text-xs lg:text-sm text-white">Sesi review, feedback, dan diskusi
                          bersama praktisi expert 4-10 tahun
                          berpengalaman</p>
                  </div>
              </div>
          </div>
-         <svg width="98" height="101" viewBox="0 0 98 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="hidden lg:block" width="98" height="101" viewBox="0 0 98 101" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path
                  d="M59.8994 22.3414C59.8994 34.6803 55.367 44.6828 49.7759 44.6828C44.1849 44.6828 39.6525 34.6803 39.6525 22.3414C39.6525 10.0026 44.1849 0 49.7759 0C55.367 0 59.8994 10.0026 59.8994 22.3414Z"
                  fill="#FFD633" />
@@ -78,10 +78,10 @@
 
      </div>
 
-     <div class="mt-10 flex flex-row-reverse gap-6 items-center">
+     <div class="mt-10 flex flex-wrap sm:flex-nowrap flex-row-reverse gap-6 items-center">
          <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-4.jpg') }}');"
-             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
-             <div class="flex flex-col h-full justify-between w-3/4">
+             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-full sm:w-1/2'>
+             <div class="flex flex-col h-full justify-between w-full sm:w-3/4">
                  <div>
                      <div class="flex items-center gap-6 mb-5">
                          <span class="bg-[#FFF5CD] rounded-full p-1">
@@ -92,18 +92,18 @@
                                      fill="black" />
                              </svg>
                          </span>
-                         <p class="text-white font-lexend">Career Growth & Networking</p>
+                         <p class="text-white font-lexend text-sm lg:text-base">Career Growth & Networking</p>
                      </div>
-                     <p class="text-sm text-white">Bangun network professional dengan praktisi industri &
+                     <p class="text-xs lg:text-sm text-white">Bangun network professional dengan praktisi industri &
                          siap masuk kerja</p>
                  </div>
-                 <a class="block text-center text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
+                 <a class="block text-center text-xs lg:text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
                      href="#">Lihat Profil Mentor</a>
              </div>
          </div>
          <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 27.33%, rgba(0, 0, 0, 0.495575) 39.9%, rgba(0, 0, 0, 0.7) 51.82%), url('{{ asset('images/benefit-3.jpg') }}');"
-             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-1/2'>
-             <div class="flex flex-col h-full justify-between w-3/4">
+             class='bg-cover bg-center h-[218px] rounded-[10px] p-5 w-full sm:w-1/2'>
+             <div class="flex flex-col h-full justify-between w-full sm:w-3/4">
                  <div>
                      <div class="flex items-center gap-6 mb-5">
                          <span class="bg-[#FFF5CD] rounded-full p-1">
@@ -114,16 +114,16 @@
                                      fill="black" />
                              </svg>
                          </span>
-                         <p class="text-white font-lexend">Bisa Konversi SKS & Auto Lolos!</p>
+                         <p class="text-white font-lexend text-sm lg:text-base">Bisa Konversi SKS & Auto Lolos!</p>
                      </div>
-                     <p class="text-sm text-white">Kesempatan magang di dunia kerja, auto lolos, dan bisa
+                     <p class="text-xs lg:text-sm text-white">Kesempatan magang di dunia kerja, auto lolos, dan bisa
                          konversi sks sesuai ketentuan kampus masing-masing.</p>
                  </div>
-                 <a class="block text-center text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
+                 <a class="block text-center text-xs lg:text-sm rounded-md p-2.5 h-[43px] text-white leading-[1.75] border border-white w-[210px]"
                      href="#">Hubungi Admin</a>
              </div>
          </div>
-         <svg width="98" height="101" viewBox="0 0 98 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <svg class="hidden lg:block" width="98" height="101" viewBox="0 0 98 101" fill="none" xmlns="http://www.w3.org/2000/svg">
              <path
                  d="M59.8994 22.3414C59.8994 34.6803 55.367 44.6828 49.7759 44.6828C44.1849 44.6828 39.6525 34.6803 39.6525 22.3414C39.6525 10.0026 44.1849 0 49.7759 0C55.367 0 59.8994 10.0026 59.8994 22.3414Z"
                  fill="#FFD633" />

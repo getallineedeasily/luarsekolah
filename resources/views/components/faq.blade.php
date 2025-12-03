@@ -1,10 +1,10 @@
-<div class="max-w-10/12 mx-auto">
-    <h2 class="font-medium text-2xl text-center pb-10">Frequently Asked Questions</h2>
+<div class="w-full lg:max-w-10/12 mx-auto">
+    <h2 class="font-medium text-lg lg:text-2xl text-center pb-10">Frequently Asked Questions</h2>
     @foreach ($faq as $f)
         <div class="accordion-item space-y-2 mb-3">
             <div class="flex items-center gap-3">
                 <button
-                    class="accordion-button font-lexend bg-[#E7E7E7] rounded-[18px] py-2.5 px-4 w-fit cursor-pointer text-left transition-all duration-300">{{ $f->question }}
+                    class="accordion-button font-lexend bg-[#E7E7E7] rounded-[18px] py-2.5 px-4 w-fit cursor-pointer text-left transition-all duration-300 text-sm lg:text-base">{{ $f->question }}
                 </button>
                 <div
                     class="accordion-icon flex justify-center items-center rounded-full border p-1.5 border-[#C39C00] w-[25px] h-[25px] cursor-pointer transition-all duration-300">
@@ -18,7 +18,7 @@
             </div>
             <div class="accordion-content overflow-hidden max-h-0 transition-all duration-300">
                 <div
-                    class="inner font-lexend bg-[#FFEA9A] rounded-[19px] py-2.5 px-4 border-b-2 border-l border-solid border-[#6D6D6D] w-fit">
+                    class="inner font-lexend bg-[#FFEA9A] rounded-[19px] py-2.5 px-4 border-b-2 border-l border-solid border-[#6D6D6D] w-fit text-sm lg:text-base">
                     {!! $f->answer !!}</div>
             </div>
         </div>
