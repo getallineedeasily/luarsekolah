@@ -1,6 +1,6 @@
 <div class="w-full lg:max-w-10/12 mx-auto">
     <div class="relative"></div>
-    <h3 class="font-medium text-xl lg:text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
+    <h3 class="font-semibold text-xl lg:text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
     <h5 class="text-[#5D5D5D] text-sm sm:text-lg lg:text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan
         kebutuhanmu
     </h5>
@@ -82,11 +82,11 @@
         </div>
     </div>
 
-    <div class="flex flex-col xl:flex-row gap-8 justify-center items-center mb-20 mt-10 sm:mt-0">
+    <div class="flex flex-col lg:flex-row gap-8 justify-center items-center mb-20 mt-10 sm:mt-0">
         <p class="italic text-sm text-[#000000] text-center">September 2025 <span class="text-[#454545]">udah ditutup
                 nih. Tunggu kami
                 di batch selanjutnya, ya! </span> </p>
-        <a class="text-center text-sm bg-[#FFD633] rounded-md p-2.5 sm:h-[43px] text-black leading-[1.75] shadow-[0px_8px_16px_0px_rgba(0,0,0,0.08)] flex gap-1.5 items-center sm:gap-2.5 sm:px-8"
+        <a class="text-center text-sm bg-[#FFD633] rounded-md p-2.5 lg:h-[43px] text-black leading-[1.75] shadow-[0px_8px_16px_0px_rgba(0,0,0,0.08)] flex justify-center gap-1.5 items-center sm:gap-2.5 sm:px-8 sm:w-3/4 lg:w-fit"
             href="#">
             <span class="text-sm lg:text-base">Join Waiting list (bulan desember) sekarang</span>
             <svg class="shrink-0" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"

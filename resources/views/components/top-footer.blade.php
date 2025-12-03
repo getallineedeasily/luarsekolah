@@ -30,7 +30,7 @@
             </aside>
             <div class="font-medium  text-[#1E1E1E]">
                 <p class="">Email</p>
-                <p class="underline">info@luarsekolah.com</p>
+                <p class="underline break-all">info@luarsekolah.com</p>
             </div>
         </div>
         <div class="font-medium  text-[#1E1E1E]">
@@ -38,7 +38,7 @@
             <p>(09:00-17:00)</p>
         </div>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-8">
         <p class=" font-medium">Produk</p>
         <a class=" font-medium underline" href="#">Luarsekolah</a>
         <a class=" font-medium underline" href="#">Project Based Internship (PBI)</a>
@@ -46,14 +46,14 @@
         <a class=" font-medium underline" href="#">Aplikasi <span
                 class="text-[#0071FF]">segera</span></a>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-8">
         <p class=" font-medium">Perusahaan</p>
         <a class=" font-medium underline" href="#">Tentang Kami</a>
         <a class=" font-medium underline" href="#">FAQ</a>
         <a class=" font-medium underline" href="#">Gabung Komunitas</a>
         <a class=" font-medium underline" href="#">Blog</span></a>
     </div>
-    <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-8">
         <p class=" font-medium">Media Sosial</p>
         <div class="flex justify-start gap-2 items-center">
             <aside class="size-5">
