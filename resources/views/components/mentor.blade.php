@@ -1,4 +1,4 @@
-<div class="w-full lg:max-w-10/12 mx-auto text-white pt-16 sm:pt-0">
+<div class="w-full lg:max-w-10/12 mx-auto text-white pt-16 sm:pt-0 fade-in">
     <div class="w-full sm:max-w-10/12 mb-9">
         <h2 class="text-[#FFD633] text-2xl lg:text-[36px] font-semibold pb-6">Kenali Mentor Kami!</h2>
         <h3 class="font-medium text-lg lg:text-[24px]">Belajar dengan Mentor Profesional dari Berbagai

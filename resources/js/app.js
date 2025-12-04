@@ -117,6 +117,19 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const faders = document.querySelectorAll(".fade-in");
+    function checkVisibility() {
+        const triggerBottom = window.innerHeight * 0.85;
+
+        faders.forEach((el) => {
+            const rect = el.getBoundingClientRect();
+            if (rect.top < triggerBottom) {
+                el.classList.add("show");
+            }
+        });
+    }
+    window.addEventListener("load", checkVisibility);
+    window.addEventListener("scroll", checkVisibility);
     const buttons = document.querySelectorAll(".accordion-button");
 
     buttons.forEach((btn) => {

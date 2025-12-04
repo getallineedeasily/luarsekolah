@@ -27,3 +27,14 @@
     fill: #c39c00;
     transition: fill 0.3s;
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1.25s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

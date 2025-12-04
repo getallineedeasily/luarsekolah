@@ -1,4 +1,4 @@
-<div class="w-full lg:max-w-10/12 mx-auto py-4 text-sm lg:text-base">
+<div class="w-full lg:max-w-10/12 mx-auto py-4 text-sm lg:text-base fade-in">
     {{-- desktop --}}
     <nav class="flex justify-between items-center max-sm:hidden">
         <aside>

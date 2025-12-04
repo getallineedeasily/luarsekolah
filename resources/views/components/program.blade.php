@@ -1,4 +1,4 @@
-<div class="w-full lg:max-w-10/12 mx-auto">
+<div class="w-full lg:max-w-10/12 mx-auto fade-in">
     <div class="relative"></div>
     <h3 class="font-semibold text-xl lg:text-2xl text-[#0F0F0F] text-center pb-2">Project-Based Internship</h3>
     <h5 class="text-[#5D5D5D] text-sm sm:text-lg lg:text-xl text-center">Pilih program Project-Based Internship yang sesuai dengan

@@ -54,12 +54,12 @@
         {{-- Video Testimonials --}}
         <section id="alumni"
             style="background-image: linear-gradient(180deg, #564500 25.48%, #927500 59.13%, #DCB000 77.88%, #FFFFFF 100%);"
-            class="mx-4 rounded-t-[20px] py-10 px-4 lg:px-0">
+            class="mx-4 rounded-t-[20px] py-10 px-4 lg:px-0 fade-in">
             <x-video-testimonial />
         </section>
 
         {{-- Story Testimonial --}}
-        <section class="mx-4 pt-4 pb-10 px-4 lg:px-0">
+        <section class="mx-4 pt-4 pb-10 px-4 lg:px-0 fade-in">
             <x-story-testimonial />
         </section>
 
@@ -70,7 +70,7 @@
     </main>
 
     {{-- Footer --}}
-    <footer class="bg-[#FFEA98AC] py-20 font-inter px-4 lg:px-0">
+    <footer class="bg-[#FFEA98AC] py-20 font-inter px-4 lg:px-0 fade-in">
         <div class="w-full lg:max-w-10/12 mx-auto">
             {{-- Top Footer --}}
             <x-top-footer></x-top-footer>

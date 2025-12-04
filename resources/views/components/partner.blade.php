@@ -1,4 +1,4 @@
-<div class="w-full lg:max-w-10/12 mx-auto space-y-24">
+<div class="w-full lg:max-w-10/12 mx-auto space-y-24 fade-in">
     <div>
         <h3 class="text-lg lg:text-xl text-[#0F0F0F] text-center">400+ Alumni kami telah bekerja di berbagai perusahaan industri
         </h3>
