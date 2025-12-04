@@ -7,7 +7,7 @@
 
         <div id="menu-links" class="text-white space-x-4 lg:space-x-8">
             @foreach ($menus as $menu)
-                <a href="#" class="font-poppins font-medium"> {{ $menu }}</a>
+                <a href="{{ '#' . strtolower($menu) }}" class="font-poppins font-medium"> {{ $menu }}</a>
             @endforeach
         </div>
 
@@ -43,7 +43,7 @@
 
         <div id="mobile-menu" class="hidden space-y-6">
             @foreach ($menus as $menu)
-                <a href="#" class="block font-poppins font-medium">{{ $menu }}</a>
+                <a href="{{ '#' . strtolower($menu) }}" class="block font-poppins font-medium">{{ $menu }}</a>
             @endforeach
 
             <a href="#"
