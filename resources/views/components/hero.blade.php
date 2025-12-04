@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center max-w-10/12 mx-auto pt-10 sm:pt-0">
         <div class="text-center">
             <h1 class="text-xl sm:text-3xl lg:text-[42px] font-medium pb-2">Belajar Langsung dari Praktisi Berbagai Industri -
-                bukan
+                Bukan
                 Sekedar Teori!
             </h1>
             <h5 class="text-xs sm:text-sm lg:text-xl pb-6">Dibimbing mentor profesional dari berbagai Industri & real

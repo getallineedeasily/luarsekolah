@@ -19,7 +19,7 @@
                     <img src="{{ $m->mentor_image }}" alt="{{ $m->mentor }}" class="w-full h-full object-cover">
                 </div>
                 <div class="space-y-2">
-                    <p class="text-base lg:text-xl">{{ $m->mentor }}</p>
+                    <p class="text-base lg:text-xl text-[#FFE066]">{{ $m->mentor }}</p>
                     <p class="font-medium text-xs">{{ $m->mentor_job }}</p>
                     <p class="text-xs">di Perusahaan X</p>
                 </div>
@@ -31,7 +31,7 @@
                     alt="Moh Aufal Marom Arrozi" class="w-full h-full object-cover">
             </div>
             <div class="space-y-2">
-                <p class="text-base lg:text-xl">Moh Aufal Marom Arrozi</p>
+                <p class="text-base lg:text-xl text-[#FFE066]">Moh Aufal Marom Arrozi</p>
                 <p class="font-medium text-xs">Senior Software Engineer</p>
                 <p class="text-xs">di Perusahaan X</p>
             </div>
