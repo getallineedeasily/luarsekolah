@@ -9,14 +9,6 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
     const cards = track.querySelectorAll(".carousel-card");
     const firstCard = cards[0];
 
-    const cardHeight = firstCard.offsetHeight;
-
-    prevBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
-    nextBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
-
-    prevBtn.style.height = cardHeight + "px";
-    nextBtn.style.height = cardHeight + "px";
-
     let dots = [];
     let currentPage = 0;
     let layout = {};
@@ -107,6 +99,14 @@ document.querySelectorAll("[data-carousel]").forEach((carousel) => {
 
     function initCarousel() {
         layout = recomputeLayout();
+        const cardHeight = firstCard.offsetHeight;
+
+        prevBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
+        nextBtn.style.top = track.offsetTop + cardHeight / 2 + "px";
+
+        prevBtn.style.height = cardHeight + "px";
+        nextBtn.style.height = cardHeight + "px";
+
         setupPagination();
         updateUI();
     }
