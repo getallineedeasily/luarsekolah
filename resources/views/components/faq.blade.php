@@ -1,4 +1,4 @@
-<div class="w-full lg:max-w-10/12 mx-auto">
+<div class="w-full lg:max-w-10/12 mx-auto fade-in">
     <h2 class="font-medium text-lg lg:text-2xl text-center pb-10">Frequently Asked Questions</h2>
     @foreach ($faq as $f)
         <div class="accordion-item space-y-2 mb-3">

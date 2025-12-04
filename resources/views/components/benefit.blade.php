@@ -1,4 +1,4 @@
- <div class="w-full lg:max-w-10/12 mx-auto">
+ <div class="w-full lg:max-w-10/12 mx-auto fade-in">
      <h3 class="text-[#0F0F0F] font-semibold text-xl lg:text-2xl text-center pb-2.5">Bangun Portfolio dari kasus Industri
          dipandu
          dengan mentor dari
