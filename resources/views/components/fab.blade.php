@@ -1,4 +1,4 @@
-<div class="fixed right-3 sm:right-5 lg:right-10 bottom-4 sm:bottom-5 lg:bottom-10 space-y-5">
+<div class="fixed right-3 sm:right-5 lg:right-10 bottom-4 sm:bottom-5 lg:bottom-10 space-y-5 z-20">
     <div class="rounded-full bg-[#008E6A] p-[13px] cursor-pointer">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
