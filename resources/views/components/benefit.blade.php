@@ -1,9 +1,9 @@
  <div class="w-full lg:max-w-10/12 mx-auto fade-in">
-     <h3 class="text-[#0F0F0F] font-semibold text-xl lg:text-2xl text-center pb-2.5">Bangun Portfolio dari kasus Industri
-         dipandu
-         dengan mentor dari
-         berbagai perusahaan</h3>
-     <h5 class="text-[#5D5D5D] text-center text-sm lg:text-base">Grup mentoring dari mentor expert memastikan kamu memahami
+     <h3 class="text-[#0F0F0F] font-semibold text-xl lg:text-2xl text-center pb-2.5">Bangun Portofolio dari Kasus Industri
+         Dipandu
+         dengan Mentor dari
+         Berbagai Perusahaan</h3>
+     <h5 class="text-[#5D5D5D] text-center text-sm lg:text-base font-lexend">Grup mentoring dari mentor expert memastikan kamu memahami
          standar industri & hasil bisa konversi
          SKS</h5>
 
