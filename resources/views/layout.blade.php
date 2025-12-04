@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -29,14 +29,14 @@
         </section>
 
         {{-- Mentor --}}
-        <section
+        <section id="mentor"
             style="background: linear-gradient(180deg, #1E1E1E 90.38%, rgba(61, 61, 61, 0.864296) 92.78%, rgba(122, 122, 122, 0.589327) 95.03%, rgba(203, 203, 203, 0.233081) 97.44%, rgba(255, 255, 255, 0) 100%);"
             class="pt-4 pb-32 px-4 lg:px-0">
             <x-mentor></x-mentor>
         </section>
 
         {{-- List Program PBI --}}
-        <section class="pt-4 px-4 lg:px-0">
+        <section id="program" class="pt-4 px-4 lg:px-0">
             <x-program> </x-program>
         </section>
 
@@ -52,7 +52,7 @@
         </section>
 
         {{-- Video Testimonials --}}
-        <section
+        <section id="alumni"
             style="background-image: linear-gradient(180deg, #564500 25.48%, #927500 59.13%, #DCB000 77.88%, #FFFFFF 100%);"
             class="mx-4 rounded-t-[20px] py-10 px-4 lg:px-0">
             <x-video-testimonial />
@@ -64,7 +64,7 @@
         </section>
 
         {{-- FAQ --}}
-        <section class="py-12 px-4 lg:px-0">
+        <section id="faq" class="py-12 px-4 lg:px-0">
             <x-faq></x-faq>
         </section>
     </main>
